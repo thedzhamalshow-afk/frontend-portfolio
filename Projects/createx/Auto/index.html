@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Auto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="#">
+                    <svg class="svg-logo" width="122" height="28" viewBox="0 0 122 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-inside-1_528_550" fill="white">
+                            <path
+                                d="M1.90595 4.662V10.2626C1.90595 11.1813 1.90595 12.2133 0 12.2133V13.7264V13.7468V15.2221C1.90595 15.2221 1.90595 16.2534 1.90595 17.1727V22.7728C1.90595 27.1192 4.28734 27.4347 8.33667 27.4347V24.0543C6.43072 24.0543 5.71666 23.7738 5.71666 22.6893V17.1442C5.71666 15.8637 5.80457 14.5262 4.68683 13.7171C5.80457 12.9092 5.71666 11.5716 5.71666 10.29V4.746C5.71666 3.66275 6.43131 3.381 8.33667 3.381V8.02092e-07C4.28734 -0.000581727 1.90595 0.315001 1.90595 4.662ZM12.6216 4.48058C11.5804 5.36025 11.0601 6.62375 11.0601 8.26992V9.74867H8.88507V12.8386H11.0601V24.0362H15.7864V12.8386H18.7144V9.74867H15.7864V8.694C15.7864 8.15733 15.9443 7.74375 16.2601 7.45325C16.5759 7.16275 17.0274 7.01808 17.6129 7.01808C17.9005 7.01808 19.3699 7.02275 19.3699 7.02275V3.437C19.3699 3.437 16.7463 3.40842 16.3713 3.40842C15.2303 3.40842 13.6628 3.59975 12.6216 4.48058ZM21.4487 7.00992H26.1756V3.437H21.4487V7.00992ZM21.4487 24.0368H26.1756V9.74867H21.4487V24.0368ZM37.8314 9.48442C36.9391 9.48442 36.1299 9.68508 35.4051 10.0852C34.6803 10.4854 34.0715 11.0431 33.5787 11.7553L33.3975 9.74867H28.9774V24.0362H33.6762V13.7637C33.9178 13.4995 34.2084 13.2913 34.5475 13.1431C34.8866 12.9949 35.2747 12.9185 35.7119 12.9185C36.4092 12.9185 36.9367 13.0883 37.2943 13.4266C37.652 13.7661 37.8314 14.3436 37.8314 15.1632V24.0374H42.5439V15.1766C42.5439 13.1956 42.1277 11.7518 41.2964 10.8448C40.4645 9.93767 39.3091 9.48442 37.8314 9.48442ZM56.7964 16.9919C55.9089 16.31 54.5442 15.7961 52.704 15.4531C51.533 15.2431 50.7538 15.0039 50.3687 14.7397C49.9829 14.4766 49.7898 14.154 49.7898 13.776C49.7898 13.3793 49.9572 13.0556 50.2915 12.7995C50.6258 12.544 51.0397 12.4157 51.5324 12.4157C52.2016 12.4157 52.6873 12.5615 52.9893 12.852C53.2913 13.1425 53.4426 13.5695 53.4426 14.1324H58.0158L58.0439 14.0537C58.1001 12.705 57.5332 11.6089 56.3431 10.759C55.153 9.90908 53.5538 9.48383 51.5462 9.48383C49.6402 9.48383 48.1302 9.9225 47.0143 10.7987C45.8989 11.6748 45.3415 12.7412 45.3415 13.9994C45.3415 15.1877 45.7877 16.1262 46.68 16.8122C47.5722 17.4994 48.8969 18.0052 50.6539 18.3312C51.7693 18.5512 52.5383 18.7997 52.9612 19.0767C53.3846 19.3544 53.5957 19.67 53.5957 20.02C53.5957 20.4517 53.433 20.7853 53.1077 21.0169C52.7823 21.2502 52.3039 21.3687 51.6718 21.3687C50.9099 21.3687 50.3214 21.2176 49.9082 20.9189C49.4943 20.6203 49.2784 20.1314 49.2599 19.4536H44.9935L44.966 19.5323C44.9104 20.748 45.4791 21.8487 46.674 22.834C47.8683 23.8204 49.4925 24.3127 51.5468 24.3127C53.5269 24.3127 55.1183 23.8968 56.3221 23.0644C57.5266 22.2326 58.1282 21.175 58.1282 19.8888C58.1282 18.6398 57.6839 17.6738 56.7964 16.9919ZM73.6198 18.0285H73.5361L71.0548 9.74983H68.0844L65.6306 18.0956H65.5469L63.8879 9.74983H59.5378L63.0931 24.0374H67.0677L69.5346 16.4582H69.6183L72.0727 24.0374H76.0604L79.602 9.74983H75.2519L73.6198 18.0285ZM87.6032 9.48433C85.3629 9.47567 83.64 10.1605 82.4367 11.5383C81.2317 12.9156 80.63 14.6918 80.63 16.8659V17.3682C80.63 19.3573 81.2927 21.0128 82.6161 22.3335C83.9408 23.6547 85.7146 24.3145 87.9363 24.3145C89.1353 24.3145 90.2579 24.1628 91.3038 23.8589C92.3492 23.5556 93.2026 23.1752 93.8617 22.7173L92.7469 19.9967C91.9288 20.3233 91.2524 20.5514 90.7178 20.6838C90.1825 20.8168 89.4691 20.8827 88.5768 20.8827C87.6935 20.8827 86.9878 20.6471 86.4579 20.1763C85.9275 19.7038 85.6123 19.1036 85.5094 18.3732L85.5381 18.2933H94.1541V15.9547C94.1541 13.9656 93.5728 12.39 92.4114 11.2274C91.2512 10.0654 89.6473 9.48433 87.6032 9.48433ZM89.5552 15.5068H85.4975L85.4556 15.4414C85.5304 14.6749 85.7373 14.063 86.077 13.6051C86.4155 13.1483 86.925 12.9191 87.6038 12.9191C88.273 12.9191 88.7646 13.1128 89.0821 13.5001C89.3979 13.8874 89.5564 14.4422 89.5564 15.1637L89.5552 15.5068ZM103.418 9.48433C101.177 9.47567 99.4557 10.1605 98.2513 11.5383C97.048 12.9156 96.4452 14.6918 96.4452 16.8659V17.3682C96.4452 19.3573 97.1078 21.0128 98.4325 22.3335C99.7577 23.6547 101.53 24.3145 103.751 24.3145C104.951 24.3145 106.074 24.1628 107.12 23.8589C108.166 23.5556 109.018 23.1752 109.678 22.7173L108.563 19.9967C107.745 20.3233 107.069 20.5514 106.534 20.6838C105.998 20.8168 105.285 20.8827 104.393 20.8827C103.51 20.8827 102.804 20.6471 102.274 20.1763C101.743 19.7038 101.428 19.1036 101.325 18.3732L101.353 18.2933H109.97V15.9547C109.97 13.9656 109.389 12.39 108.227 11.2274C107.065 10.0654 105.463 9.48433 103.418 9.48433ZM105.369 15.5068H101.313L101.271 15.4414C101.346 14.6749 101.552 14.063 101.891 13.6051C102.229 13.1483 102.739 12.9191 103.418 12.9191C104.087 12.9191 104.58 13.1128 104.897 13.5001C105.214 13.8874 105.371 14.4422 105.371 15.1637V15.5073L105.369 15.5068ZM119.652 20.3309C119.067 20.3309 118.615 20.1863 118.299 19.8958C117.984 19.6052 117.825 19.1905 117.825 18.6538V12.8637H120.277V9.77258H117.825V3.41425H113.099V9.77258H110.923V12.8637H113.099V19.0779C113.099 20.7241 113.619 21.9876 114.66 22.8684C115.7 23.7498 117.267 23.9406 118.41 23.9406C118.786 23.9406 121.409 23.912 121.409 23.912V20.3263C121.409 20.3263 119.941 20.3309 119.652 20.3309Z" />
+                        </mask>
+                        <path
+                            d="M1.90595 4.662V10.2626C1.90595 11.1813 1.90595 12.2133 0 12.2133V13.7264V13.7468V15.2221C1.90595 15.2221 1.90595 16.2534 1.90595 17.1727V22.7728C1.90595 27.1192 4.28734 27.4347 8.33667 27.4347V24.0543C6.43072 24.0543 5.71666 23.7738 5.71666 22.6893V17.1442C5.71666 15.8637 5.80457 14.5262 4.68683 13.7171C5.80457 12.9092 5.71666 11.5716 5.71666 10.29V4.746C5.71666 3.66275 6.43131 3.381 8.33667 3.381V8.02092e-07C4.28734 -0.000581727 1.90595 0.315001 1.90595 4.662ZM12.6216 4.48058C11.5804 5.36025 11.0601 6.62375 11.0601 8.26992V9.74867H8.88507V12.8386H11.0601V24.0362H15.7864V12.8386H18.7144V9.74867H15.7864V8.694C15.7864 8.15733 15.9443 7.74375 16.2601 7.45325C16.5759 7.16275 17.0274 7.01808 17.6129 7.01808C17.9005 7.01808 19.3699 7.02275 19.3699 7.02275V3.437C19.3699 3.437 16.7463 3.40842 16.3713 3.40842C15.2303 3.40842 13.6628 3.59975 12.6216 4.48058ZM21.4487 7.00992H26.1756V3.437H21.4487V7.00992ZM21.4487 24.0368H26.1756V9.74867H21.4487V24.0368ZM37.8314 9.48442C36.9391 9.48442 36.1299 9.68508 35.4051 10.0852C34.6803 10.4854 34.0715 11.0431 33.5787 11.7553L33.3975 9.74867H28.9774V24.0362H33.6762V13.7637C33.9178 13.4995 34.2084 13.2913 34.5475 13.1431C34.8866 12.9949 35.2747 12.9185 35.7119 12.9185C36.4092 12.9185 36.9367 13.0883 37.2943 13.4266C37.652 13.7661 37.8314 14.3436 37.8314 15.1632V24.0374H42.5439V15.1766C42.5439 13.1956 42.1277 11.7518 41.2964 10.8448C40.4645 9.93767 39.3091 9.48442 37.8314 9.48442ZM56.7964 16.9919C55.9089 16.31 54.5442 15.7961 52.704 15.4531C51.533 15.2431 50.7538 15.0039 50.3687 14.7397C49.9829 14.4766 49.7898 14.154 49.7898 13.776C49.7898 13.3793 49.9572 13.0556 50.2915 12.7995C50.6258 12.544 51.0397 12.4157 51.5324 12.4157C52.2016 12.4157 52.6873 12.5615 52.9893 12.852C53.2913 13.1425 53.4426 13.5695 53.4426 14.1324H58.0158L58.0439 14.0537C58.1001 12.705 57.5332 11.6089 56.3431 10.759C55.153 9.90908 53.5538 9.48383 51.5462 9.48383C49.6402 9.48383 48.1302 9.9225 47.0143 10.7987C45.8989 11.6748 45.3415 12.7412 45.3415 13.9994C45.3415 15.1877 45.7877 16.1262 46.68 16.8122C47.5722 17.4994 48.8969 18.0052 50.6539 18.3312C51.7693 18.5512 52.5383 18.7997 52.9612 19.0767C53.3846 19.3544 53.5957 19.67 53.5957 20.02C53.5957 20.4517 53.433 20.7853 53.1077 21.0169C52.7823 21.2502 52.3039 21.3687 51.6718 21.3687C50.9099 21.3687 50.3214 21.2176 49.9082 20.9189C49.4943 20.6203 49.2784 20.1314 49.2599 19.4536H44.9935L44.966 19.5323C44.9104 20.748 45.4791 21.8487 46.674 22.834C47.8683 23.8204 49.4925 24.3127 51.5468 24.3127C53.5269 24.3127 55.1183 23.8968 56.3221 23.0644C57.5266 22.2326 58.1282 21.175 58.1282 19.8888C58.1282 18.6398 57.6839 17.6738 56.7964 16.9919ZM73.6198 18.0285H73.5361L71.0548 9.74983H68.0844L65.6306 18.0956H65.5469L63.8879 9.74983H59.5378L63.0931 24.0374H67.0677L69.5346 16.4582H69.6183L72.0727 24.0374H76.0604L79.602 9.74983H75.2519L73.6198 18.0285ZM87.6032 9.48433C85.3629 9.47567 83.64 10.1605 82.4367 11.5383C81.2317 12.9156 80.63 14.6918 80.63 16.8659V17.3682C80.63 19.3573 81.2927 21.0128 82.6161 22.3335C83.9408 23.6547 85.7146 24.3145 87.9363 24.3145C89.1353 24.3145 90.2579 24.1628 91.3038 23.8589C92.3492 23.5556 93.2026 23.1752 93.8617 22.7173L92.7469 19.9967C91.9288 20.3233 91.2524 20.5514 90.7178 20.6838C90.1825 20.8168 89.4691 20.8827 88.5768 20.8827C87.6935 20.8827 86.9878 20.6471 86.4579 20.1763C85.9275 19.7038 85.6123 19.1036 85.5094 18.3732L85.5381 18.2933H94.1541V15.9547C94.1541 13.9656 93.5728 12.39 92.4114 11.2274C91.2512 10.0654 89.6473 9.48433 87.6032 9.48433ZM89.5552 15.5068H85.4975L85.4556 15.4414C85.5304 14.6749 85.7373 14.063 86.077 13.6051C86.4155 13.1483 86.925 12.9191 87.6038 12.9191C88.273 12.9191 88.7646 13.1128 89.0821 13.5001C89.3979 13.8874 89.5564 14.4422 89.5564 15.1637L89.5552 15.5068ZM103.418 9.48433C101.177 9.47567 99.4557 10.1605 98.2513 11.5383C97.048 12.9156 96.4452 14.6918 96.4452 16.8659V17.3682C96.4452 19.3573 97.1078 21.0128 98.4325 22.3335C99.7577 23.6547 101.53 24.3145 103.751 24.3145C104.951 24.3145 106.074 24.1628 107.12 23.8589C108.166 23.5556 109.018 23.1752 109.678 22.7173L108.563 19.9967C107.745 20.3233 107.069 20.5514 106.534 20.6838C105.998 20.8168 105.285 20.8827 104.393 20.8827C103.51 20.8827 102.804 20.6471 102.274 20.1763C101.743 19.7038 101.428 19.1036 101.325 18.3732L101.353 18.2933H109.97V15.9547C109.97 13.9656 109.389 12.39 108.227 11.2274C107.065 10.0654 105.463 9.48433 103.418 9.48433ZM105.369 15.5068H101.313L101.271 15.4414C101.346 14.6749 101.552 14.063 101.891 13.6051C102.229 13.1483 102.739 12.9191 103.418 12.9191C104.087 12.9191 104.58 13.1128 104.897 13.5001C105.214 13.8874 105.371 14.4422 105.371 15.1637V15.5073L105.369 15.5068ZM119.652 20.3309C119.067 20.3309 118.615 20.1863 118.299 19.8958C117.984 19.6052 117.825 19.1905 117.825 18.6538V12.8637H120.277V9.77258H117.825V3.41425H113.099V9.77258H110.923V12.8637H113.099V19.0779C113.099 20.7241 113.619 21.9876 114.66 22.8684C115.7 23.7498 117.267 23.9406 118.41 23.9406C118.786 23.9406 121.409 23.912 121.409 23.912V20.3263C121.409 20.3263 119.941 20.3309 119.652 20.3309Z"
+                            fill="#1E1B1B" stroke="black" stroke-width="2" mask="url(#path-1-inside-1_528_550)" />
+                    </svg>
+                </a>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About us</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-contact">
+                    <div class="header-contact-icon">
+                        <a href="#" class="">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#61C4A1" />
+                                <path
+                                    d="M27.76 23.9203C26.4636 22.8869 25.148 22.261 23.8675 23.2928L23.1029 23.9164C22.5435 24.3691 21.5034 26.4842 17.482 22.1728C13.4615 17.8668 15.854 17.1963 16.4143 16.7475L17.1831 16.1231C18.4568 15.089 17.9761 13.7871 17.0574 12.447L16.5031 11.6353C15.5802 10.2983 14.5753 9.4202 13.2982 10.4528L12.6081 11.0148C12.0437 11.398 10.4659 12.6437 10.0832 15.0101C9.62262 17.8496 11.0756 21.1011 14.4044 24.6688C17.7291 28.238 20.9842 30.0308 24.0677 29.9996C26.6303 29.9738 28.1779 28.6923 28.6619 28.2263L29.3545 27.6636C30.6282 26.6317 29.8368 25.5812 28.5396 24.5455L27.76 23.9203Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="phone-info">
+                        <p class="phone-info-text">Road Assistance</p>
+                        <a href="tel:18002652452" class="phone-number">
+                            <span>1800 265 24 52</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">Get your vehicle service done online at one place</h2>
+                    <div class="hero-action">
+                        <a href="#" class="action-button">Book a service</a>
+                        <svg class="play-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <foreignObject x="-80" y="-80" width="184" height="184">
+                                <div xmlns="http://www.w3.org/1999/xhtml"
+                                    style="backdrop-filter:blur(40px);clip-path:url(#bgblur_0_703_93_clip_path);height:100%;width:100%">
+                                </div>
+                            </foreignObject>
+                            <path data-figma-bg-blur-radius="80"
+                                d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                                fill="#1E1B1B" />
+                            <path
+                                d="M8.99268 13.7144V10.18C8.99268 8.67335 8.99268 7.92001 9.48339 7.62962C9.97411 7.33922 10.6345 7.70177 11.9552 8.42688L14.9846 10.0901C16.3231 10.8249 16.9924 11.1924 17.0071 11.7668C17.0218 12.3412 16.3722 12.7424 15.0731 13.5448L12.0437 15.416C10.6936 16.2499 10.0185 16.6668 9.50559 16.3807C8.99268 16.0947 8.99268 15.3012 8.99268 13.7144Z"
+                                fill="white" />
+                            <defs>
+                                <clipPath id="bgblur_0_703_93_clip_path" transform="translate(80 80)">
+                                    <path
+                                        d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <a href="#" class="play-button">Play Video</a>
+                    </div>
+                    <div class="working-hours">
+                        <img src="/img/whours.svg" alt="">
+                        <div class="working-hours-content">
+                            <p class="working-hours-title">We are open</p>
+                            <p class="working-hours-text">Monday to Friday 9:00 AM to 10:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img src="/img/hero.jpg" alt="" class="hero-img">
+                    <div class="service-card">
+                        <img src="/img/Circle.svg" alt="">
+                        <span>Quick service</span>
+                    </div>
+                    <div class="rating-card">
+                        <img src="/img/Stars.svg" alt="">
+                        <span>4.5/5 Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="offer">
+        <div class="offer__container">
+            <div class="offer__inner">
+                <div class="offer__content">
+                    <p class="offer__text">
+                        What we Offer
+                    </p>
+                    <h2 class="offer__title section__title">
+                        We offer full service auto repair & maintenance
+                    </h2>
+                </div>
+                <div class="gallery">
+                    <ul class="gallery__list">
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/1.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Diagnostics
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/2.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Engine Repair
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/3.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Wheel Repair
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/4.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Oil Filter
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/5.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Body Work
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/6.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Batteries
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/7.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Insurance Claim
+                                </h3>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a class="gallery__item-link" href="#">
+                                <img class="gallery__item-img" src="/img/gallery_grid/8.svg" alt="">
+                                <h3 class="gallery__item-title">
+                                    Custom Service
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offer__learn">
+                    <a href="#" class="offer__learn-link">
+                        Learn about services
+                        <img src="/img/arrow-right.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="steps">
+        <div class="container">
+            <div class="steps__inner">
+                <div class="steps__content">
+                    <h2 class="steps__content-title section__title">
+                        We follow a clear process to help you out.
+                    </h2>
+                    <p class="steps__content-text">Through True Rich Attended does no end it his mother since real had
+                        half
+                        every
+                        him case in packages enquire</p>
+                    <a href="#" class="steps__content-btn">
+                        Learn more
+                    </a>
+                </div>
+                <ul class="steps__list">
+                    <li class="steps__item">
+                        <p class="steps__item-title">Get a Quote</p>
+                        <p class="steps__item-text">
+                            Through True Rich Attended does no end it his mother since real had half
+                            every.
+                        </p>
+                    </li>
+                    <li class="steps__item">
+                        <p class="steps__item-title">Book an Appointment</p>
+                        <p class="steps__item-text">
+                            Through True Rich Attended does no end it his mother since real had half every.
+                        </p>
+                    </li>
+                    <li class="steps__item">
+                        <p class="steps__item-title">Get your Service Done</p>
+                        <p class="steps__item-text">
+                            Through True Rich Attended does no end it his mother since real had half every.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__row">
+            <div class="about__image">
+                <img src="/img/about/1.jpg" alt="">
+            </div>
+            <div class="about__content">
+                <h2 class="about__content-title">
+                    Get in touch with us for your service related query
+                </h2>
+                <a href="#" class="about__content-link">
+                    Contact Us
+                </a>
+            </div>
+            <div class="about__image">
+                <img src="/img/about/2.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="about__container">
+            <ul class="info__list">
+                <li class="info__item">
+                    <p class="info__item-numbers">
+                        20+
+                    </p>
+                    <p class="info__item-text">
+                        Proffesional
+                    </p>
+                </li>
+                <li class="info__item">
+                    <p class="info__item-numbers">
+                        10+
+                    </p>
+                    <p class="info__item-text">
+                        Years Eperience
+                    </p>
+                </li>
+                <li class="info__item">
+                    <p class="info__item-numbers">
+                        12k+
+                    </p>
+                    <p class="info__item-text">
+                        Service Closed
+                    </p>
+                </li>
+                <li class="info__item">
+                    <p class="info__item-numbers">
+                        100%
+                    </p>
+                    <p class="info__item-text">
+                        Customer Satisfaction
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="logo">
+        <div class="container">
+            <h2 class="logo__title">Brands we Serve</h2>
+            <ul class="logo__gallery-list">
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/1.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/2.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/3.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/4.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/5.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/1.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/2.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/3.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/4.svg" alt="">
+                </li>
+                <li class="logo__gallery-item">
+                    <img src="/img/logo/5.svg" alt="">
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <h2 class="blog__title">
+                Our blog
+            </h2>
+            <div class="blog__content">
+                <h3 class="blog__content-title">
+                    Latest
+                </h3>
+                <h3 class="blog__content-title">
+                    Popular
+                </h3>
+                <h3 class="blog__content-title">
+                    Favorites
+                </h3>
+            </div>
+            <ul class="blog__content-list">
+                <li class="blog__content-item">
+                    <img src="/img/blog/1.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        5 Genius Car Accessories You Should Never Drive Without
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+                <li class="blog__content-item">
+                    <img src="/img/blog/2.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        5 Genius Car Accessories You Should Never Drive Without
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+                <li class="blog__content-item">
+                    <img src="/img/blog/3.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        We provide blow straight past it with the wheels skidding
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+                <li class="blog__content-item">
+                    <img src="/img/blog/4.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        We provide blow straight past it with the wheels skidding
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+                <li class="blog__content-item">
+                    <img src="/img/blog/5.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        5 Genius Car Accessories You Should Never Drive Without
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+                <li class="blog__content-item">
+                    <img src="/img/blog/6.jpg" alt="">
+                    <time class="blog__content-date">
+                        Posted on October 6th 2021
+                    </time>
+                    <h3 class="blog__content-title">
+                        5 Genius Car Accessories You Should Never Drive Without
+                    </h3>
+                    <p class="blog__content-text">
+                        We provide a full range of front end mechanical repairs for all makes and models We provide a
+                        full range of front end mechanical repairs for all makes and models
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="costumers">
+        <div class="container">
+            <div class="costumers swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="costumers__item">
+                            <div class="costumers__item-content">
+                                <img src="/img/costumers/1.svg" alt="">
+                                <h2 class="costumers__item-title">Jonathan Vallem</h2>
+                                <p class="costumers__item-text">New york</p>
+                            </div>
+                            <p class="costumers__item-desc">I have got my car repaired at Finsweet many times before,
+                                they are good at what they do. Not only did they repair my car in a short comprehensive
+                                look on all the working</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="costumers__item">
+                            <div class="costumers__item-content">
+                                <img src="/img/costumers/2.svg" alt="">
+                                <h2 class="costumers__item-title">Smith Johnson</h2>
+                                <p class="costumers__item-text">New york</p>
+                            </div>
+                            <p class="costumers__item-desc">I have got my car repaired at Finsweet many times before,
+                                they are good at what they do. Not only did they repair my car in a short comprehensive
+                                look on all the working</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="costumers__bottom">
+                    <div class="swiper-pagination"></div>
+                    <div class="costumers__buttons">
+                        <div class="swiper-button-prev">
+                            <img src="/img/arrow/Arrow-left.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="/img/arrow/Arrow-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title">
+                Frequently Asked Questions
+            </h2>
+            <ul class="faq__list">
+                <li class="faq__item active">
+                    <button class="faq__item-btn">
+                        <span class="faq__question">How long should a car repair take?</span>
+                        <span class="faq__icon"></span>
+                    </button>
+                    <p class="faq__desc">
+                        I have got my car repaired at Finsweet many times before, they are good at what they do. Not
+                        only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at
+                        Finsweet
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__item-btn">
+                        <span class="faq__question">How do I schedule my car's appointment ?</span>
+                        <span class="faq__icon"></span>
+                    </button>
+                    <p class="faq__desc">
+                        I have got my car repaired at Finsweet many times before, they are good at what they do. Not
+                        only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at
+                        Finsweet
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__item-btn">
+                        <span class="faq__question">What are the repair services provided?</span>
+                        <span class="faq__icon"></span>
+                    </button>
+                    <p class="faq__desc">
+                        I have got my car repaired at Finsweet many times before, they are good at what they do. Not
+                        only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at
+                        Finsweet
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__item-btn">
+                        <span class="faq__question">How do I find auto body shops near me?</span>
+                        <span class="faq__icon"></span>
+                    </button>
+                    <p class="faq__desc">
+                        I have got my car repaired at Finsweet many times before, they are good at what they do. Not
+                        only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at
+                        Finsweet
+                    </p>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__item-btn">
+                        <span class="faq__question">Genuine spare parts during car repair?</span>
+                        <span class="faq__icon"></span>
+                    </button>
+                    <p class="faq__desc">
+                        I have got my car repaired at Finsweet many times before, they are good at what they do. Not
+                        only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at
+                        Finsweet
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts__title">
+                Get in touch with our experts
+            </h2>
+            <div class="contacts__content">
+                <form class="contacts__form">
+                    <input class="contacts__form-input" type="text" placeholder="Your full Name">
+                    <input class="contacts__form-input" type="email" placeholder="Your Email">
+                    <input class="contacts__form-input" placeholder="Select service type">
+                    <input class="contacts__form-input" placeholder="Message">
+                    <button class="contacts__form-btn" type="submit">
+                        Send message
+                    </button>
+                </form>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <h3 class="contacts__item-address">
+                            Address
+                        </h3>
+                        <p class="contacts__item-text">
+                            NH 234 Public Square San Francisco 65368
+                        </p>
+                    </li>
+                    <li class="contacts__item">
+                        <h3 class="contacts__item-address">
+                            Contact Details
+                        </h3>
+                        <a href="tel:+18002652452" class="contacts__item-text">
+                            1800 265 24 52
+                        </a>
+                        <a class="contacts__item-link" href="mailto:finsweet@gmail.com">
+                            Finsweet@gmail.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <h3 class="contacts__item-address">
+                            Opening Hours
+                        </h3>
+                        <p class="contacts__item-text">
+                            Monday to Friday 9:00 AM to 10:00 AM
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="location">
+        <div class="container">
+            <div class="location__map">
+                <img src="/img/location/Map.jpg" alt="New York Map">
+            </div>
+        </div>
+        <img class="location__bg-image" src="/img/location/map-Image.jpg" alt="">
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Get in touch with us for your service</h3>
+                    <ul class="footer__socials-list">
+                        <li><a href="#"><img src="/img/footer/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/img/footer/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/img/footer/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="/img/footer/linek.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <ul class="footer__contacts-list">
+                    <li>
+                        <div>Help line Noumber</div>
+                        <strong>1800 265 24 52</strong>
+                    </li>
+                    <li>
+                        <div>Address</div>
+                        <strong>NH 234 Public Square San Francisco 65368</strong>
+                    </li>
+                    <li>
+                        <div>We are open</div>
+                        <strong>Monday to Friday 9:00 AM to 10:00 AM</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
